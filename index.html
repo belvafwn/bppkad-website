@@ -1,17 +1,4 @@
-function createDashboardTrendChart(data) {
-    const years = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
-    const categories = ['Pendapatan', 'Pembelanjaan', 'Pembiayaan'];
-    
-    const datasets = categories.map((kategori, index) => {
-        const colors = [
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 99, 132, 1)',
-            'rgba(75, 192, 192, 1)'
-        ];
-        
-        const yearlyData = years.map(year => {
-            const items = data.filter(item => item.kategori === kategori && parseInt(item.tahun) === year);
-            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -1519,4 +1506,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 </body>
+
 </html>
